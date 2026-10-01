@@ -15,8 +15,11 @@
     --Red-400: hsl(7, 99%, 70%);
     --Yellow-500: hsl(51, 100%, 49%);
     --Green-800: hsl(167, 40%, 24%);
+    /* Graphic design text*/
     --Blue-800: hsl(198, 62%, 26%);
+    /* photography text */
     --Green-500: hsl(167, 34%, 41%);
+    /* footer */
 
     /* Neutral */
     --Grey-950: hsl(212, 27%, 19%);
@@ -69,14 +72,15 @@ header {
     justify-content: start;
     align-items: center;
     width: 100%;
+    max-width: 375px;
     height: 100%;
-    min-height: 460px;
-    gap: 37px;
+    min-height: 540px;
+    gap: 55px;
 
 
     background-image: url(images/mobile/image-header.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
 }
 
@@ -93,15 +97,16 @@ header h1 {
     font-family: var(--Fraunces);
     font-weight: var(--Fraunces-weight-900);
     color: var(--White);
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
     letter-spacing: 5px;
 }
 
-/* main {
+main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 375px;
     height: 100%;
 }
 
@@ -114,4 +119,65 @@ header h1 {
 
 .transform-section img {
     object-fit: cover;
-} */
+}
+
+.transform-section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: inherit;
+    max-width: 375px;
+    height: inherit;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+    gap: 30px;
+}
+
+.transform-section-info h1 {
+    font-family: var(--Fraunces);
+    color: var(--Grey-950);
+}
+
+.transform-section-info p {
+    font-size: var(--Body-size);
+    font-family: var(--Barlow);
+    font-weight: var(--Barlow-weight-600);
+    color: var(--Grey-550);
+    line-height: 1.5rem;
+}
+
+.transform-section-info .link-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.transform-section-info .link-container a {
+    font-family: var(--Fraunces);
+    font-weight: var(--Fraunces-weight-900);
+    color: var(--Grey-950);
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0 4px;
+    width: max-content;
+    position: relative;
+    z-index: 1;
+}
+
+.transform-section-info .link-container a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 7px;
+    
+    background-color: var(--Yellow-500);
+    opacity: 30%;
+    border-radius: 4px; 
+    z-index: -1;
+}
