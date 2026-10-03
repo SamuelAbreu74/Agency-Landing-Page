@@ -357,6 +357,7 @@ main {
     align-items: center;
     padding: 2.5rem;
     gap: 50px;
+    margin-bottom: 40px;
 }
 
 .testimonial-section h1 {
@@ -372,6 +373,7 @@ main {
     align-items: center;
     text-align: center;
     gap: 30px;
+    
 }
 
 .testimonial-div img{
@@ -379,6 +381,7 @@ main {
     width: 70px;
     height: auto;
     border-radius: 100%;
+    
 }
 
 .carreer-and-name-info {
@@ -395,4 +398,21 @@ main {
 .carreer-and-name-info p {
     font-size: calc(var(--Body-size) - 2px);
     color: var(--Grey-400);
+}
+
+/* FINAL IMAGES GRID */
+
+.images-grid {
+    display: grid;
+    max-width: 375px;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-div img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
