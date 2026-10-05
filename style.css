@@ -469,3 +469,14 @@ footer {
     font-weight: var(--Barlow-weight-600);
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 3rem;
+}
+
+.social-links img {
+    filter: brightness(65%) saturate(150%);
+}
