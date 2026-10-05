@@ -425,32 +425,32 @@ footer {
     width: 100%;
     max-width: 375px;
     background-color: var(--Green-500);
-    filter: brightness(150%)  saturate(70%);
+    filter: brightness(150%) saturate(70%);
     padding: 3rem 1rem;
     gap: 2rem;
 }
 
 
 .footer-logo {
-  display: inline-block;
-  width: 170px;
-  height: 33px;
-  
+    display: inline-block;
+    width: 170px;
+    height: 33px;
 
-  background-color: var(--Green-800); 
-  filter: brightness(90%) saturate(150%);
 
-  -webkit-mask-image: url("images/logo.svg");
-  mask-image: url("images/logo.svg");
-  
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  
-  -webkit-mask-position: center;
-  mask-position: center;
+    background-color: var(--Green-800);
+    filter: brightness(90%) saturate(150%);
+
+    -webkit-mask-image: url("images/logo.svg");
+    mask-image: url("images/logo.svg");
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
 }
 
 .page-links {
@@ -479,4 +479,67 @@ footer {
 
 .social-links img {
     filter: brightness(65%) saturate(150%);
+}
+
+.desktop-nav {
+    display: none;
+}
+
+/* DESKTOP RESPONSIVITY */
+
+@media (min-width: 768px) {
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .desktop-nav a {
+        text-decoration: none;
+        color: var(--White);
+        font-family: var(--Barlow);
+        font-weight: var(--Barlow-weight-600);
+    }
+
+    .desktop-nav .contact-button {
+        margin-left: 1rem;
+        text-decoration: none;
+        color: var(--Grey-950);
+        font-family: var(--Fraunces);
+        font-weight: var(--Fraunces-weight-700);
+        background-color: var(--White);
+        padding: 1rem;
+        padding-inline: 1.5rem;
+
+        border-radius: 2rem;
+    }
+
+    header {
+        max-width: none;
+        min-height: 800px;
+        gap: 6rem;
+        padding-inline: 1rem;
+        background-image: url(images/desktop/image-header.jpg);
+    }
+
+    header h1 {
+        font-size: 65px;
+    }
+
+    main {
+        max-width: 100%;
+    }
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
 }
