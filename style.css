@@ -691,4 +691,8 @@ footer {
         grid-template-rows: 1fr;
     }
 
+    footer {
+        max-width: none;
+    }
+
 }
