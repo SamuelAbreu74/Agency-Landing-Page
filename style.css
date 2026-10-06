@@ -599,13 +599,57 @@ footer {
         font-size: calc(var(--Body-size) + 2px);
     }
 
-    
     .transform-section-info .link-container, 
     .standout-section-info .link-container {
         justify-content: start; 
     }
 
-    
 
-    
+    .graphic-and-photography-sections-container {
+        display: flex;
+        width: 100%;
+    }
+
+    .graphic-design-section,
+    .photography-section {
+        max-width: none;
+        width: 50%;
+        aspect-ratio: 720 / 600;
+        background-size: cover;
+        background-position: top center;
+
+    }
+
+    .graphic-design-section{
+        background-image: url(images/desktop/image-graphic-design.jpg);
+    }
+
+    .photography-section{
+        background-image: url(images/desktop/image-photography.jpg);
+    }
+
+
+    .graphic-design-section-info,
+    .photography-section-info {
+        max-width: 450px;
+        gap: 2rem;
+        padding-bottom: 5rem;
+    }
+
+
+    .graphic-design-section-info h1,
+    .photography-section-info h1 {
+        font-size: calc(var(--Body-size) + 24px);
+    }
+
+    .graphic-design-section-info p,
+    .photography-section-info p {
+        font-size: calc(var(--Body-size) + 3px);
+        line-height: 2rem;
+    }
+
+    .graphic-design-section-info p {
+        color: var(--Green-500);
+    }
+
 }
