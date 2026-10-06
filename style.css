@@ -652,4 +652,36 @@ footer {
         color: var(--Green-500);
     }
 
+
+
+    .testimonial-section  {
+        padding-block: 12rem;
+    }
+
+    .testimonial-section h1 {
+        font-size: calc(var(--Body-size) + 10px);
+    }
+
+    .testimonials-container {
+        display: flex;
+        padding: 3rem;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    .testimonial-div {
+        max-width: 350px;
+        gap: 4rem;
+
+
+    }
+
+    .testimonial-div p {
+        font-size: calc(var(--Body-size) + 2px);
+        line-height: 2rem;
+    }
+
+     .testimonial-div h2 {
+        font-size: calc(var(--Body-size) + 5px);
+    }
 }
