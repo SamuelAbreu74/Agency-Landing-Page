@@ -684,4 +684,11 @@ footer {
      .testimonial-div h2 {
         font-size: calc(var(--Body-size) + 5px);
     }
+
+    .images-grid {
+        max-width: none;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
 }
