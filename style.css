@@ -75,7 +75,7 @@ header {
     width: 100%;
     max-width: 375px;
     min-height: 540px;
-    gap: 55px;
+    gap: 3.5rem;
     background-image: url(images/mobile/image-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -359,8 +359,14 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 2.5rem;
-    gap: 50px;
+    gap: 3rem;
     margin-bottom: 40px;
+}
+
+.testimonials-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .testimonial-section h1 {
@@ -375,7 +381,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 3rem;
 
 }
 
@@ -527,7 +533,7 @@ footer {
     header {
         max-width: none;
         min-height: 100vh;
-        gap: 11rem;
+        gap: 8rem;
         padding-inline: 1rem;
         background-image: url(images/desktop/image-header.jpg);
         background-position: bottom center;
@@ -579,7 +585,7 @@ footer {
         height: 100%;
         max-width: none;
         margin: 0;           
-        padding: 4rem 10%;   
+        padding: 4rem 11%;   
         text-align: left;
         align-items: flex-start;
         justify-content: center;
@@ -663,7 +669,7 @@ footer {
     }
 
     .testimonials-container {
-        display: flex;
+        flex-direction: row;
         padding: 3rem;
         align-items: center;
         gap: 6rem;
